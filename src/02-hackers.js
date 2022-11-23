@@ -10,7 +10,7 @@ const descifrarCodigo = (codigo) => {
       const letra = String.fromCharCode(codigoDigito)
       codigoFinal.push(letra)
       i = i + 2
-    } else if (codigoPorDigito[i] === '9') {
+    } else if (codigoPorDigito[i] === '9' || codigoPorDigito[i] === '8' || codigoPorDigito[i] === '5') {
       const codigoDigito = `${codigoPorDigito[i]}${codigoPorDigito[i + 1]}`
       const letra = String.fromCharCode(codigoDigito)
       codigoFinal.push(letra)
